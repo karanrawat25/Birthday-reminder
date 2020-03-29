@@ -1,0 +1,33 @@
+
+
+
+print("\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t*********BIRTHDAY APPLICATION*********")
+
+D={}
+while True:
+
+    print("\n\n\n\t\t\t\t\t1. Want To Add Birthday")
+    print("\t\t\t\t\t2. Want to Check the Added Birthdays in Your System")
+    print("\t\t\t\t\t3. Or Want to Exit")
+
+    b=int(input("Enter your Choice: "))
+    if(b==1):
+
+             n=input("Enter the name of Person: ")
+             d=int(input("Enter Birth date: "))
+             m=input("Enter the birthday Month: ")
+             y=int(input("Enter Birth Year: "))
+             print("\n\n\t\t\t\t\t****Record Added Successfully******")
+             D[n]=["Date= ",d,"MONTH= ",m,"Year= ",y]
+
+
+
+    elif(b==2):
+          n=input("Enter name to Find Details: ")
+          birth=D.get(n,"No data found")
+          print("\n\t\t",birth)
+
+    elif(b==3):
+            exit("\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t ***********  THANKS FOR USING THIS APPLICATION  ***********")
+    else:
+            print("\n\n\t\t\t\t\t\t\tWrong Choice Enter a valid choice")
